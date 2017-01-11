@@ -12,9 +12,15 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+   return view('welcome');
 });
 
 Auth::routes();
 
 Route::get('/home', 'HomeController@index');
+
+Route::resource('ariculo/categoria')
+Route::resource('ariculo/categoria')
+Route::resource('ariculo/articulo')
+
+Route::resource('envios/envio','EnvioController');
